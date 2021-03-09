@@ -1,0 +1,8 @@
+prefix=/home/tungkw/catkin/install
+
+Name: ur5_ikfast_build
+Description: Description of ur5_ikfast_build
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
