@@ -1,0 +1,14 @@
+# pre
+1. github: openrave-installation
+2. change /ur_description/ur5_robot.urdf.xacro
+	'kinematics_config' set as 'my_robot_calibration.yaml' rather 'ur5_default.yaml'
+3. change `openrave-config --python-dir`/openravepy/_openravepy_/ikfast.py
+	https://github.com/ros-planning/moveit_tutorials/issues/417
+	reason is when closing openrave will get a segmentation fault (try 'openrave' in shell and close it)
+4. replace "fmauch/universal_robot" by 'ros_industrial/universal_robot'
+    but keep 'ur_msgs' due to "center_of_gravity" error
+
+# build
+```buildoutcfg
+./build.sh
+```
