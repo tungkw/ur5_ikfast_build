@@ -5,7 +5,7 @@ rm ./src/ur5_ikfast.cpp
 rm ./bin/ikfast
 
 # build file
-#rosrun xacro xacro --inorder -o ./urdf/ur5.urdf ./urdf/ur5.urdf.xacro
+rosrun xacro xacro --inorder -o ./urdf/ur5.urdf ./urdf/ur5.urdf.xacro
 rosrun collada_urdf urdf_to_collada ./urdf/ur5.urdf ./urdf/ur5.dae
 #rosrun moveit_kinematics round_collada_numbers.py ./urdf/ur5.dae ./urdf/ur5.dae 5
 openrave-robot.py ./urdf/ur5.dae --info links

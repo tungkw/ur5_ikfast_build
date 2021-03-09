@@ -5,6 +5,6 @@
   <xacro:arg name="kinematics_config" default="$(find ur5_ikfast_build)/my_robot_calibration.yaml"/>
 
   <!-- ur5 -->
-  <xacro:include filename="$(find ur_description)/urdf/ur5_robot.urdf.xacro" />
+  <xacro:include filename="$(find ur_description)/urdf/ur5_joint_limited_robot.urdf.xacro" />
 
 </robot>
