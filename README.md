@@ -18,3 +18,28 @@ failed due to ikfast get no solution for calibrated urdf
 ./xacro_to_collada.sh
 ./build.sh
 ```
+
+
+
+
+# log
+## ur_kinematics
+###'ur_kin_py.cpp'
+```
+#include <boost/numpy.hpp>
+#include <boost/scoped_array.hpp>
+#include <boost/scoped_array.hpp>
+
+namespace p = boost::python;
+namespace np = boost::numpy;
+```
+```
+#include <boost/python.hpp>
+#include <boost/python/numpy.hpp>
+
+namespace p = boost::python;
+namespace np = boost::python::numpy;
+```
+### CMakeLists.txt
+...
+### test...
